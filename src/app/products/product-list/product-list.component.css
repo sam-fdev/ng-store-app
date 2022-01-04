@@ -1,10 +1,9 @@
 .card {
-  width: 50vw;
-  box-shadow: 2rem 2rem 4rem;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 2rem 2rem 2.5rem;
+  gap:1 1 20px;
   margin-left: 2rem;
   padding: 2rem;
+  width: 50vw;
 }
 .card-heading{
   text-decoration: underline;
@@ -17,6 +16,13 @@ div{
 h3{
   font-size: 1.5rem;
   line-height: 2;
+}
+
+.btn-flex{
+  display: flex;
+  flex: 1 1 42rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 button{
   background-color: darkviolet;

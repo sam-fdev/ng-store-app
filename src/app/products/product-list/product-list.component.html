@@ -3,7 +3,9 @@
 
   <div *ngFor="let product of products" @fadeSlideInOut>
     <h3>
-      <a href="#" [title]="product.name + ' details'">
+      <a
+       [title]="product.name + ' details'"
+       routerLink="products/{{product.id}}">
         {{ product.name }}
       </a>
     </h3>
@@ -11,9 +13,12 @@
     <p *ngIf="product.description">
       {{ product.description }}
     </p>
+    <div class="btn-flex">
+      <button (click)="share()">
+        Share
+      </button>
+      <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+    </div>
 
-    <button (click)="share()">
-      Share
-    </button>
   </div>
 </div>

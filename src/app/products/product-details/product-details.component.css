@@ -1,0 +1,17 @@
+.card{
+  border: 1px solid #aaa;
+  padding: 1rem;
+  width: fit-content;
+  margin-left: 1.5rem;
+  box-shadow: 12px 12px 2px 1px rgba(128, 128, 143, 0.2);
+}
+button{
+  border: 1px solid #aaa;
+  border-radius: .8rem;
+  padding: 1rem;
+  width: fit-content;
+  background-color: mediumvioletred;
+  color: white;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
